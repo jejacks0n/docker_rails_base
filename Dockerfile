@@ -85,4 +85,4 @@ ENV GEM_HOME=/bundle
 ENV PATH="./bin:/bundle/bin:${PATH}"
 
 # install rails (so we have the `rails new` command)
-RUN gem install rails
+RUN gem install rails --no-ri --no-rdoc
