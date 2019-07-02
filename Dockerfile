@@ -78,11 +78,6 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 # setup previewing
 RUN apt-get -y install python-poppler ffmpeg
 
-# setup the app
-RUN mkdir /app
-WORKDIR /app
-COPY . /app
-
 # setup bundler
 ENV BUNDLE_PATH=/bundle
 ENV BUNDLE_BIN=/bundle/bin
