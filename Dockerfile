@@ -83,7 +83,7 @@ ENV BUNDLE_PATH=/bundle
 ENV BUNDLE_BIN=/bundle/bin
 ENV GEM_HOME=/bundle
 ENV PATH="./bin:/bundle/bin:${PATH}"
-RUN gem install --no-rdoc -no-ri bundler
+RUN gem install bundler
 
 # install rails (so we have the `rails new` command)
-RUN gem install --no-rdoc -no-ri rails
+RUN gem install rails
